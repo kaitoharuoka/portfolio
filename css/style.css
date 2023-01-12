@@ -1,0 +1,106 @@
+/* SP版 */
+@media screen and (max-width: 768px) {
+
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    header {
+        width: 100%;
+      }
+      
+      .header-inner {
+        height: 90px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.2em;
+        background-color: orange;
+        position: relative;
+        top: 50%;
+        z-index: 1000;
+      }
+      
+      .header-inner .logo {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+        left: 0;
+      }
+      .header-inner .header-nav {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+        right: 0;
+        background-color: magenta;
+      }
+      .header-nav-list {
+        display: flex;
+        background-color: #fff;
+      }
+      
+      .header-nav-item {
+        margin: 0 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ccc;
+        text-align: center;
+        list-style: none;
+      }
+      
+      .header-nav-item a {
+        text-decoration: none;
+      }
+      
+      .header-ham {
+        display: none;
+      }
+      
+      .menu2 {
+        width: 20px;
+        height: 3px;
+        margin: 4px 0;
+        margin-right: 0;
+        background-color: #333;
+      }
+      
+      .header-inner .header-nav .header-nav-list ul li:nth-child(1) {
+        color: red;
+      }
+      
+      .header-nav-item:hover {
+        background: #eee;
+      }
+      
+      .logo img {
+        width: 80px;
+        background-color: white;
+      }
+
+      .wrap {
+        width: 100%;
+      }
+      .wrap h1 {
+        text-align: center;
+        margin: 40px auto 20px;
+      }
+      .wrap .title-line {
+        width: 100px;
+        margin: 0 auto;
+        background-color: orange;
+        height: 5px;
+      }
+      .wrap1 {
+        height: 500px;
+        background-color: gray;;
+      }
+      .wrap2  p {
+        width: 80%;
+        margin: 30px auto 50px;
+      }
+      .wrap3 {
+        background: beige;
+        height: 600px;
+      }
+}
