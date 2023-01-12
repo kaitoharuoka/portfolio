@@ -6,101 +6,201 @@
 @media screen and (min-width: 768px) {
     header {
         width: 100%;
-      }
-      
-      .header-inner {
+        background-color: rgba(243, 239, 235, 0.8);
+    }
+    .header-inner {
         height: 90px;
         width: 100%;
-        display: block;
-        margin: 0 auto;
-        font-size: 1.2em;
-        background-color: orange;
+        display: table;
+        padding: 0 20px;
+    }
+    .header-inner .logo {
+        display: table-cell;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #000;
+    }
+    .header-inner .header-nav {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+    }
+    .header-nav-item {
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 50px;
+        font-weight: bold;
+        color: #000;
+    }
+    .header-nav-item:hover {
+        transform: scale(1.1);
+        border-bottom: 1px solid #333;
+        transition: ease all 0.4s;
+    }
+
+    main {
+        background-color: #F3EFEB;;
+    }
+    .wrap {
+        width: 100%;
+    }
+    .wrap .wrap-inner {
+        width: 100%;
+    }
+    .wrap1 .wrap-inner .mv {
         position: relative;
-        top: 50%;
-        z-index: 1000;
-      }
-      
-      .header-inner .logo {
-        display: inline-block;
+        width: 100%;
+        height: 84vh;
+        overflow: hidden;
+    }
+    .wrap1 .wrap-inner .mv video {
         position: absolute;
         top: 50%;
-        z-index: 100;
-        left: 0;
-      }
-      .header-inner .header-nav {
-        display: inline-block;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .wrap1 .wrap-inner .mv .text-container {
+        width: 100%;
+        text-align: center;
         position: absolute;
-        top: 50%;
-        z-index: 100;
-        right: 0;
-        background-color: magenta;
-      }
-      .header-nav-list {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .wrap1 .wrap-inner .mv .text-container h2 {
+        font-size: 70px;
+    }
+    .wrap1 .wrap-inner .mv .text-container p {
+        font-size: 25px;
+    }
+    .wrap2 {
+        margin-top: 150px;
+    }
+    .wrap2 .wrap-inner {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .wrap .wrap-inner h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .wrap2 .wrap-inner .read-text {
+        margin-top: 60px;
+    }
+    .wrap2 .wrap-inner p {
+        line-height: 1.8em;
+    }
+    .wrap2 .wrap-inner .detail {
+        margin: 60px auto 0;
         display: flex;
-        background-color: #fff;
-      }
-      
-      .header-nav-item {
-        margin: 0 15px;
+        justify-content: center;
+        gap: 60px;
+    }
+    .wrap2 .wrap-inner .detail .detail-img img {
+        border-radius: 20px;
+        width: 320px;
+        height: 320px;
+    }
+    .wrap2 .wrap-inner .detail .detail-text {
+        font-size: 16px;
+    }
+    .wrap3 {
+        margin-top: 150px;
+    }
+    .wrap3 .wrap-inner {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .wrap3 .wrap-inner ul {
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .wrap3 .wrap-inner ul li:nth-child(1) {
+        margin-top: 60px;
+    }
+    .wrap3 .wrap-inner ul li:nth-child(2) {
+        margin-top: 30px;
+    }
+    .wrap3 .wrap-inner ul li:nth-child(3) {
+        margin-top: 30px;
+    }
+    .wrap3 .wrap-inner ul li .service-title {
+        width: 230px;
+    }
+    .wrap3 .wrap-inner ul li .service-title h4 {
+        text-align: center;
+        font-size: 25px;
+        font-family: "Shippori Mincho";
+        font-weight: bold;
+        line-height: 1;
+        padding: 0.4rem 1.8rem;
+        border-left: 10px solid #000;
+        background: #f0eae4;
+    }
+    .wrap3 .wrap-inner ul li .service-title h4 span {
+        text-align: center;
+        display: block;
         font-size: 16px;
         font-weight: bold;
-        color: #ccc;
-        text-align: center;
-        list-style: none;
-      }
-      
-      .header-nav-item a {
-        text-decoration: none;
-      }
-      
-      .header-ham {
-        display: none;
-      }
-      
-      .menu2 {
-        width: 20px;
-        height: 3px;
-        margin: 4px 0;
-        margin-right: 0;
-        background-color: #333;
-      }
-      
-      .header-inner .header-nav .header-nav-list ul li:nth-child(1) {
-        color: red;
-      }
-      
-      .header-nav-item:hover {
-        background: #eee;
-      }
-      
-      .logo img {
-        width: 80px;
-        background-color: white;
-      }
-
-      .wrap {
-        width: 100%;
-      }
-      .wrap h1 {
-        text-align: center;
-        margin: 40px auto 20px;
-      }
-      .wrap .title-line {
-        width: 100px;
+        font-family: "Eczar";
+    }
+    .wrap3 .wrap-inner ul li p {
+        margin-top: 30px;
+    }
+    .wrap4 {
+        margin-top: 180px;
+        padding-bottom: 150px;
+    }
+    .wrap4 .wrap-inner {
+        width: 900px;
         margin: 0 auto;
-        background-color: orange;
-        height: 5px;
-      }
-      .wrap1 {
-        height: 500px;
-        background-color: gray;;
-      }
-      .wrap2  p {
-        width: 80%;
-        margin: 30px auto 50px;
-      }
-      .wrap3 {
-        background: beige;
-        height: 600px;
-      }
+    }
+    .wrap4 .wrap-inner ul {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .wrap4 .wrap-inner ul li {
+        width: 430px;
+        height: 260px;
+        margin-top: 40px;
+    }
+    .wrap4 .wrap-inner ul li:hover {
+        transform: scale(1.1);
+        transition: ease 0.5s;
+    }
+    .wrap4 .wrap-inner ul li img {
+        width: 100%;
+    }
+    .footer-inner {
+        width: 900px;
+        margin: 40px auto 0;
+    }
+    .footer-inner ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;   
+    }
+    .footer-inner ul li {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .footer-inner ul li:hover {
+        transform: scale(1.1);
+        transition: ease 0.4s;
+        cursor: pointer;
+        border-bottom: 1px solid #333;
+    }
+    .footer-inner .copyright {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
 }
